@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Open Food Club</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/618ad9f12d.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/javascript.js"></script>
+	<script type="text/javascript" src="js/logout.js"></script>
+	<link id="style-sheet" rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/blueberries.ico">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poller+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;700&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+	rel="stylesheet"> 
+</head>
+<body>
+	<div class="darkBackground"></div>	
+	<header class="header">
+		<div class="header__top">
+			<span class="header__anouncement">¡Fruits from all Spain!</span>
+			<a href="home.html"><img src="images/logo.png" class="header__logo"></a>
+			<ul class="header__top-list">
+				<li>
+					<button onclick="clickAccount()"><i class="fas fa-user"></i></button>
+				</li>
+				<li>
+					<a href="subscriptions.html"><i class="fas fa-box-open"></i></a>
+				</li>
+			</ul>
+		</div>
+		<div class="header__bottom">
+			<ul>
+				<li>
+				<a href="home.html" class="header__bottom-home"><i class="fas fa-home"></i></a>
+				</li>
+				<li>
+					<a href="products.html">PRODUCTS</a>
+				</li>
+				<li>
+					<a href="contact.html">CONTACT</a>
+				</li>
+				<li>
+					<a href="frequentquestions.html">FAQ</link></a>
+				</li>
+			</ul>
+		</div>
+		<div id="header__drop-down-user" class="header__drop-down">
+            <i class="fas fa-user"></i>
+            <span class="header__drop-down-title"><b>My account</b></span>
+            <div class="header__drop-down-line"></div>
+            <ul class="header__account-options">
+                <li>
+                    <a href="settings.html">Settings</a>
+                </li>
+                <li>
+                    <a href="orders.html">Orders</a>
+                </li>
+                <li>
+                    <i class="fas fa-sign-out-alt"><a href="index.html" id="logoutfunction"> Log Out</a></i>
+                </li>
+            </ul>
+        </div>
+		<div class="header__gradient"></div>
+	</header>
+	<article>
+		<div class="settings">
+			<div class="settings__title">
+				<span>Settings</span>
+				<div class="settings__line1"></div>
+				<div class="settings__background">
+					<span class="settings__background-name">Your name</span>
+					<span class="settings__background-email">youemail@gmail.com</span>
+				</div>
+				<div class="settings__img">
+					<img src="images/profilepic.jpg">
+				</div>
+			</div>
+			<div class="settings__box settings__account-information">
+				<span>Account information</span>
+				<div class="settings__line2"></div>
+				<div class="settings__elements-list">
+					<div class="settings__element-a settings__element1">
+						<span>Nick</span>
+						<input type="text">
+					</div>
+					<div class="settings__element-a settings__element2">
+						<span>Date of birth</span>
+						<input type="text">
+						<input type="text">
+						<input type="text">
+					</div>
+				</div>
+				<button class="save-button">Save</button>
+				<div class="settings__line-down"></div>
+			</div>
+			<div class="settings__box settings__password">
+				<span>Password</span>
+				<div class="settings__line3"></div>
+				<div class="settings__elements-list2">
+					<div class="settings__element-b settings__element3">
+						<span>Old Password</span>
+						<input type="text">
+					</div>
+					<div class="settings__element-b settings__element4">
+						<span>New password</span>
+						<input type="text">
+					</div>
+					<div class="settings__element-b settings__element4">
+						<span>Repeat password</span>
+						<input type="text">
+					</div>
+				</div>
+				<button class="save-button">Save</button>
+				<div class="settings__line-down"></div>
+			</div>
+			<div class="settings__box settings__shipping-address">
+				<span>Shipping address</span>
+				<div class="settings__line4"></div>
+				<div class="settings__element-c">
+					<button onclick="clickShippingAddress()">
+						<i class="fas fa-plus">
+						<span>Add shipping address</span>
+					</i></button>
+				</div>
+				
+			</div>
+			<div id="settings__shipping-address-configuration" class="settings__shipping-address-configuration">
+				<div class="settings__line5"></div>
+				<div class="settings__title-sa">
+					<span>Add shipping address</span>
+				</div>
+				<div class="settings__line-down settings__line-down--sa"></div>
+				<div class="settings__sa-list">
+					<div class="settings__personal-info-list">
+						<span>Personal information</span>
+						<div class="settings__pi-grid-list">
+							<input type="text" value="Name*" class="settings__pi-grid">
+							<input type="text" value="Lastname*" class="settings__pi-grid">
+							<input type="text" value="Identity document*" class="settings__pi-grid">
+							<input type="text" value="Phone*" class="settings__pi-grid">
+						</div>
+					</div>
+					<div class="settings__sa-info-list">
+						<span>Shipping address information</span>
+						<div class="settings__pi-grid-list">
+							<input type="text" value="Shipping address*" class="settings__pi-grid settings__pi-grid--sa">
+							<input type="text" value="Optional information" class="settings__pi-grid settings__pi-grid--sa">
+							<input type="text" value="PostalCode*" class="settings__pi-grid">
+							<input type="text" value="Location*" class="settings__pi-grid">
+							<select value="Country*" class="settings__pi-grid"></select> 
+							<select value="Province*" class="settings__pi-grid"></select>
+						</div>
+					</div>
+					<div class="settings__sa-buttons">
+						<button class="cancel-button">Cancel</button>
+						<button class="save-button save-button--sa">Save</button>
+					</div>
+				</div>
+			</div>				
+			<div class="settings__line-down"></div>
+		</div>
+	</article>
+	<footer>
+		<div class="newsletter">
+			<div class="newsletter__anouncement">
+				<i class="fas fa-tags"></i>
+				<span class="newsletter__text-anouncement"> Suscribe to our newsletter and get a 5% discount on your first order.</span>
+			</div>
+			<form class="newsletter__form">
+				<div class="newsletter__email-submit">
+					<input type="text">
+					<div class="newsletter__submit">
+						<button>
+							<i class="fas fa-envelope"></i>
+						</button>
+					</div>
+				</div>
+				<div class="newsletter__checkAgreement">
+					<input type="checkbox">
+					<span class="newsletter__span">I have read and accept the privacy policy</span>
+				</div>
+			</form>
+		</div>
+		<div class="footer__social-media">
+			<div class="footer__content">
+				<span class="footer__copyright">
+					&copy by Tecnomafia. All rights reserved.
+				</span>
+				<ul class="footer__ul">
+					<li class="footer__li">
+						<div class="footer__li-content">
+							<a href="https://twitter.com/DDogearmy"><i class="fab fa-twitter"></i></a>
+						</div>
+					</li>
+					<li class="footer__li">
+						<div class="footer__li-content">
+							<a href="https://www.facebook.com/OfficialDogecoin/"><i class="fab fa-facebook-f"></i></a>
+						</div>
+					</li>
+					<li class="footer__li">
+						<div class="footer__li-content">
+							<a href="https://www.instagram.com/blowupdogecoin/?hl=es"><i class="fab fa-instagram"></i></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

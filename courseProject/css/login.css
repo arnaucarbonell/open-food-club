@@ -1,0 +1,138 @@
+body {
+    height: 97vh;
+    background-color: #F0F0F0;
+    margin: 0;
+    background-image: url('../images/background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+
+article {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#backgroundVector {
+    position: absolute;
+    z-index: -5;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 80%;
+    height: auto;
+}
+
+.login-panel {
+    justify-content: center;
+    display: flex;
+    height: 600px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px #00000049;
+}
+
+.login-panel__elements--title {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-panel__elements--title label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.login-panel__elements--title img {
+    height: 188px;
+    width: 296px;
+}
+
+.userInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    background-color: #F0F0F0;
+    border-width: 0px;
+    border-radius: 20px;
+    height: 55px;
+    width: 375px;
+    padding-left: 20px;
+}
+
+.login-panel__elements--text {
+    margin-top: 20px;
+}
+
+.login-panel__elements--text label {
+    margin-bottom: 5px;
+}
+
+.login-panel__elements--button {
+    margin-top: 50px;
+}
+
+.login-panel__elements--button span {
+    position: relative;
+    z-index: 2;
+}
+
+.login-panel__elements--button button {
+    border-radius: 20px;
+    display: block;
+    width: 397.5px;
+    height: 70px;
+    border: 0px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background: #325CBF;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    cursor: pointer;
+}
+
+.login-panel__elements--button button:after {
+    border-radius: 20px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #ffffff;
+    transition: 0.35s;
+}
+
+.login-panel__elements--button button:hover {
+    border: 3px solid #325cbf;
+    background: #325CBF;
+    color: #325CBF;
+}
+
+.login-panel__elements--button button:hover:after {
+    width: 100%;
+}
+
+.userInput {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+#username {
+    margin-bottom: 20px;
+}
