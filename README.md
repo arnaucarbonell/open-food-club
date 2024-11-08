@@ -1,4 +1,3 @@
-# Course Project: 
 # The Open Food Club
 
 The Open Food Club is a kind of supermarket that sells ecological food products from the nearby producers. It has a physical shop and now it wants to develop a web application and shop in order to automate some of its processes. The Open Food Club count on us in order to implement a web application that covers its needs (well, in 10 weeks we’ll be able to cover only part of them)
@@ -31,22 +30,7 @@ OFC performs many other business processes designed according to its values but 
 * A user can list his/her open, closed and delivered orders. The list shows the command id, the closing date if not closed yet, the delivery date and the total price. Including VAT
 * Users can also list order details, that is, the closing date (if not closed yet), the delivery date and a  list with all products in the command with the product name, quantity, and a link to the page to modify it.
 
-Functionality you MUST implement:
-* Products and prices are read from an API. You have a file with some examples. Images are represented as Base64 binary codification fields. You can see the images using a converter. See for example: https://codebeautify.org/base64-to-image-converter 
-* You’ll have details of the API in a few weeks.
-* Register subscriptions: product, quantity, initial date
-* Generate commands (for example at 4am) for each user and send an e-mail. Commands are modifiable, while open, and should have a closing date
-* Users can modify their open commands (add?, delete, change quantities). Once modified the command is closed and can not be changed anymore.
-* Planning of command freqüency for each product: init date + time interval (daily, weekly, monthly, semester, year)
-* Secure the application: an user should only be able to access her own data
-
-Functionality you should **NOT** implement:
-User’s administration: you’ll assume they are already registered. You may need to create a ddbb table to store them and populate it
-
 ### Product Examples in a Json
-Note that images are incomplete in the example. 
-
-You also have a file with lots of products and complete images in "productsExample/products.json". Note that you are provided with this file just as an example. In the project you'll retrieve products from an API.
 
 ```
 [
